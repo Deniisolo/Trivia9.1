@@ -11,28 +11,26 @@
 <body>
     <main>
         <H1>Bienvenidos a la Trivia 9.1.</H1>
-        <p>Ingresa tu nombre para comenzar el juego:</p>
         <form id="start-form">
+            <p>Ingresa tu nombre para comenzar el juego:</p>
             <input type="text" id="name-input" placeholder="Tu nombre" required>
             <button type="button" id="start-button" onclick="starboton()">Iniciar Juego</button>
         </form>
         <form id="preguntas1">
             <p>¿En qué año se llevó a cabo la Revolución Francesa?</p>
+            <input type="radio" name="Revolución" value=" 1776"> 1776
+
             <label>
-                <input type="radio" name="Revolución" value=" 1776"> 1776
+                <input type="radio" name="Revolución" value="1789"> 1789
+            </label>
 
-                <label>
-                    <input type="radio" name="Revolución" value="1789"> 1789
-                </label>
-
-                <label>
-                    <input type="radio" name="Revolución" value="1804"> 1804
-                </label>
+            <label>
+                <input type="radio" name="Revolución" value="1804"> 1804
+                <button type="button" id="button-next" onclick="buttonnext()">siguiente</button>
+            </label>
         </form>
-        <br>
         <form id="preguntas2">
             <p> ¿Quién fue el autor de la obra literaria "Cien años de soledad"?</p>
-
             <label>
                 <input type="radio" name="autor" value="Gabriel García Márquez"> Gabriel García Márquez
             </label>
@@ -43,6 +41,8 @@
 
             <label>
                 <input type="radio" name="autor" value="Mario Vargas Llosa"> Mario Vargas Llosa
+
+                <button type="button" id="button-next2" onclick="buttonnext2()">siguiente</button>
             </label>
         </form>
         <br>
@@ -59,8 +59,10 @@
 
             <label>
                 <input type="radio" name="capital" value=" Tokio"> Tokio
+                <button type="button" id="button-next3" onclick="buttonnext3()">Fin</button>
             </label>
         </form>
+        <div id="final"> Finall</div>
     </main>
 </body>
 <script src="index.js"></script>

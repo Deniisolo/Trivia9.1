@@ -22,4 +22,12 @@ h1{
     margin: 0;
     margin-top: 70px;
 }
-
+#preguntas1{
+    display: none;
+}
+#preguntas2{
+    display: none;
+}
+#preguntas3{
+    display: none;
+}
