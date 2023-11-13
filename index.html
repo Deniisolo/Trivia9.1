@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Trivia9.1</title>
 </head>
+
 <body>
     <main>
-        <form>
-            <h2>Pregunta 1: ¿Cuál es la capital de Francia?</h2>
+        <H1>Bienvenidos a la Trivia 9.1.</H1>
+        <p>Ingresa tu nombre para comenzar el juego:</p>
+        <form id="start-form">
+            <input type="text" id="name-input" placeholder="Tu nombre" required>
+            <button type="button" id="start-button" onclick="starboton()">Iniciar Juego</button>
+        </form>
+        <form id="preguntas1">
+            <p>¿En qué año se llevó a cabo la Revolución Francesa?</p>
             <label>
-              <input type="radio" name="q1" value="paris"> París
-            </label>
+                <input type="radio" name="Revolución" value=" 1776"> 1776
+
+                <label>
+                    <input type="radio" name="Revolución" value="1789"> 1789
+                </label>
+
+                <label>
+                    <input type="radio" name="Revolución" value="1804"> 1804
+                </label>
+        </form>
+        <br>
+        <form id="preguntas2">
+            <p> ¿Quién fue el autor de la obra literaria "Cien años de soledad"?</p>
+
             <label>
-              <input type="radio" name="q1" value="berlin"> Berlín
+                <input type="radio" name="autor" value="Gabriel García Márquez"> Gabriel García Márquez
             </label>
+
             <label>
-              <input type="radio" name="q1" value="londres"> Londres
+                <input type="radio" name="autor" value="Julio Cortázar"> Julio Cortázar
             </label>
-            <br>
-            <br>
-            <input type="submit" value="Enviar respuestas">
-          </form>
+
+            <label>
+                <input type="radio" name="autor" value="Mario Vargas Llosa"> Mario Vargas Llosa
+            </label>
+        </form>
+        <br>
+        <form id="preguntas3">
+            <p> ¿Cuál es la capital de Japón?</p>
+
+            <label>
+                <input type="radio" name="capital" value="Seúl"> Seúl
+            </label>
+
+            <label>
+                <input type="radio" name="capital" value=" Pekín"> Pekín
+            </label>
+
+            <label>
+                <input type="radio" name="capital" value=" Tokio"> Tokio
+            </label>
+        </form>
     </main>
 </body>
+<script src="index.js"></script>
+
 </html>

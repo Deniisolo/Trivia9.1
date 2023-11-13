@@ -1,0 +1,3 @@
+function starboton(){
+    alert("Bienvenido")
+}
