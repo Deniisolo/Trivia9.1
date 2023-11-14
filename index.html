@@ -19,52 +19,59 @@
         <section id="cronometro">10</section>
         <form id="preguntas1">
             <p>¿En qué año se llevó a cabo la Revolución Francesa?</p>
-            <input type="radio" name="Revolución" value=" 1776"> 1776
-
-            <label>
+            <label class="RevoluciónQ">
+                <input type="radio" name="Revolución" value="1776" > 1776
+            </label>
+            <label class="RevoluciónQ">
                 <input type="radio" name="Revolución" value="1789"> 1789
             </label>
 
-            <label>
+            <label class="RevoluciónQ">
                 <input type="radio" name="Revolución" value="1804"> 1804
-                <button type="button" id="button-next" onclick="buttonnext()">siguiente</button>
             </label>
+                <button type="button" id="button-check" onclick="verificar1()" >verificar</button>
+                <button type="button" id="button-next" onclick="buttonnext()">siguiente</button>
+                <div id="mensajeRespuesta1" class="mensaje-respuesta"></div>  
         </form>
+      
         <form id="preguntas2">
             <p> ¿Quién fue el autor de la obra literaria "Cien años de soledad"?</p>
-            <label>
+            <label class="autorQ">
                 <input type="radio" name="autor" value="Gabriel García Márquez"> Gabriel García Márquez
             </label>
 
-            <label>
+            <label class="autorQ">
                 <input type="radio" name="autor" value="Julio Cortázar"> Julio Cortázar
             </label>
 
-            <label>
+            <label class="autorQ">
                 <input type="radio" name="autor" value="Mario Vargas Llosa"> Mario Vargas Llosa
-
-                <button type="button" id="button-next2" onclick="buttonnext2()">siguiente</button>
             </label>
+            <button type="button" id="button-check2" onclick="verificar2()">verificar</button>
+            <button type="button" id="button-next2" onclick="buttonnext2()">siguiente</button>
+            <div id="mensajeRespuesta2" class="mensaje-respuesta"></div> 
         </form>
         <br>
         <form id="preguntas3">
             <p> ¿Cuál es la capital de Japón?</p>
 
-            <label>
+            <label class="capitalQ">
                 <input type="radio" name="capital" value="Seúl"> Seúl
             </label>
 
-            <label>
+            <label class="capitalQ">
                 <input type="radio" name="capital" value=" Pekín"> Pekín
             </label>
 
-            <label>
-                <input type="radio" name="capital" value=" Tokio"> Tokio
-                <button type="button" id="button-next3" onclick="buttonnext3()">Fin</button>
+            <label class="capitalQ">
+                <input type="radio" name="capital" value="Tokio"> Tokio
             </label>
+            <button type="button" id="button-check3" onclick="verificar3()">verificar</button>
+            <button type="button" id="button-next3" onclick="buttonnext3()">Fin</button>
+            <div id="mensajeRespuesta3" class="mensaje-respuesta"></div> 
         </form>
         <div id="final">
-            <p> Final </p>
+            <p class="final"> Final </p>
         </div>
     </main>
 </body>
