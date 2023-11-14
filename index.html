@@ -12,10 +12,11 @@
     <main>
         <H1>Bienvenidos a la Trivia 9.1.</H1>
         <form id="start-form">
-            <p>Ingresa tu nombre para comenzar el juego:</p>
-            <input type="text" id="name-input" placeholder="pon aqui tu nombre" required>
+            <p class="presentacion">Ingresa tu nombre para comenzar el juego:</p>
+            <input type="text" id="name-input" placeholder="Ingresa tu nombre" required>
             <button type="button" id="start-button" onclick="starboton()">Iniciar Juego</button>
         </form>
+        <section id="cronometro">10</section>
         <form id="preguntas1">
             <p>¿En qué año se llevó a cabo la Revolución Francesa?</p>
             <input type="radio" name="Revolución" value=" 1776"> 1776
@@ -61,12 +62,12 @@
                 <input type="radio" name="capital" value=" Tokio"> Tokio
                 <button type="button" id="button-next3" onclick="buttonnext3()">Fin</button>
             </label>
-            
-            <div id="final"> 
-                <p> Final  </p>
-            </div>
         </form>
+        <div id="final">
+            <p> Final </p>
+        </div>
     </main>
 </body>
 <script src="index.js"></script>
+
 </html>
