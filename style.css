@@ -68,8 +68,8 @@ p {
   border-radius: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 #name-input {
   color: var(black);
@@ -103,39 +103,50 @@ p {
   border-color: var(--purple-middle);
   color: var(--white);
 }
-.RevoluciónQ, .autorQ, .capitalQ {
+label{
   background-color: var(--pink);
   color: var(--black);
-  font-size: 20px;
-  display: grid;
-  justify-content: center;
-  border-radius: 35px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  margin-left: 500px;
-  margin-right: 500px;
+  font-size: 30px;
+  font-weight: 400px;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 3px;
 }
 #button-check, #button-check2, #button-check3 {
     background-color:var(--purple-middle);
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     display: inline-block;
-    height: 50px;
-    width: 80px;
-    border-radius: 25px;
-    border-color: var(--purple-middle);
-    margin: 20px;
-
-}
-#button-next, #button-next2, #button-next3{
-    background-color: var(--purple-dark);
-    font-size: 16px;
-    display: inline-block;
-    height: 50px;
-    width: 80px;
+    height: 70px;
+    width: 150px;
     border-radius: 25px;
     border-color: var(--purple-dark);
     margin: 20px;
 }
+#button-check:hover, #button-check2:hover, #button-check3:hover {
+  background-color: var(--pink-middle);
+  border-color: var(--pink-middle);
+  color: var(--white);
+}
+#button-next, #button-next2, #button-next3{
+    background-color: var(--blue-middle);
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    height: 70px;
+    width: 150px;
+    border-radius: 25px;
+    border-color: var(--blue-dark);
+    margin: 40px;
+}
+#button-next:hover, #button-next2:hover, #button-next3:hover {
+  background-color: var(--purple-middle);
+  border-color: var(--blue-dark);
+  color: var(--white);
+}
+
 .final {
   background-color: var(--pink-middle);
   color: var(--white);
@@ -148,7 +159,23 @@ p {
   margin-left: 400px;
   margin-right: 400px;
 }
-#name-input::placeholder {
+#volver-a-jugar {
+  background-color: var(--pink);
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    height: 70px;
+    width: 150px;
+    border-radius: 25px;
+    border-color: var(--black);
+    margin: 40px;
+}
+#volver-a-jugar:hover {
+  background-color: var(--blue-dark);
+  border-color: var(--blue-middle);
+  color: var(--white);
+}
+#name-input::placeholder{
   color: var(--black);
 }
 #cronometro {

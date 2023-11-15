@@ -29,8 +29,8 @@
             <label class="RevoluciónQ">
                 <input type="radio" name="Revolución" value="1804"> 1804
             </label>
-                <button type="button" id="button-check" onclick="verificar1()" >verificar</button>
-                <button type="button" id="button-next" onclick="buttonnext()">siguiente</button>
+                <button type="button" id="button-check" onclick="verificar1()" >Responder</button>
+                <button type="button" id="button-next" onclick="buttonnext()">Siguiente</button>
                 <div id="mensajeRespuesta1" class="mensaje-respuesta"></div>  
         </form>
       
@@ -47,8 +47,8 @@
             <label class="autorQ">
                 <input type="radio" name="autor" value="Mario Vargas Llosa"> Mario Vargas Llosa
             </label>
-            <button type="button" id="button-check2" onclick="verificar2()">verificar</button>
-            <button type="button" id="button-next2" onclick="buttonnext2()">siguiente</button>
+            <button type="button" id="button-check2" onclick="verificar2()">Responder</button>
+            <button type="button" id="button-next2" onclick="buttonnext2()">Siguiente</button>
             <div id="mensajeRespuesta2" class="mensaje-respuesta"></div> 
         </form>
         <br>
@@ -66,12 +66,16 @@
             <label class="capitalQ">
                 <input type="radio" name="capital" value="Tokio"> Tokio
             </label>
-            <button type="button" id="button-check3" onclick="verificar3()">verificar</button>
-            <button type="button" id="button-next3" onclick="buttonnext3()">Fin</button>
+            <button type="button" id="button-check3" onclick="verificar3()">Responder</button>
+            <button type="button" id="button-next3" onclick="buttonnext3()">Resultado</button>
             <div id="mensajeRespuesta3" class="mensaje-respuesta"></div> 
         </form>
         <div id="final">
             <p class="final"> Final </p>
+            <div id="score"> 
+               
+            </div>
+            <button type="button" id="volver-a-jugar" onclick="volverInicio()">Volver a jugar</button>
         </div>
     </main>
 </body>
