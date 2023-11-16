@@ -224,3 +224,4 @@ function verificarRespuesta(
     clearInterval(waitasecond);
   }, 1000);
 }
+appearance: none;
