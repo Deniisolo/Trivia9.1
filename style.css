@@ -17,7 +17,6 @@ body {
   font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 h1 {
-  background-color: var(--blue-sky);
   color: var(--purple-soft);
   display: grid;
   justify-content: center;
@@ -43,6 +42,12 @@ h1 {
 }
 #cronometro{
     display: none;
+}
+#pgeneral-button {
+  display: none;
+} 
+#ppop-button {
+  display: none;
 }
 .presentacion {
   background-color: var(--pink-middle);
@@ -77,53 +82,62 @@ p {
   display: inline-block;
   text-align: center;
   height: 40px;
-  width: 500px;
+  width: 400px;
   border-radius: 35px;
   margin-top: auto;
   border-color: var(--purple-soft);
   margin-left: 400px;
 }
 #start-button {
-  background-color: var(--blue-soft);
-  color: var(black);
+  background-color: var(--pink-middle);
+  color: var(--white);
   font-size: 16px;
   font-weight: bold;
-  display: inline-block;
   height: 40px;
   width: 200px;
   border-radius: 25px;
   margin-top: auto;
   margin: 0;
   text-align: center;
-  border-color: var(--blue-soft);
+  border-color: var(--pink-middle);
   margin-left: 30px;
 }
 #start-button:hover {
-  background-color: var(--purple-middle);
-  border-color: var(--purple-middle);
+  background-color: var(--pink-soft);
+  border-color: var(--pink-soft);
   color: var(--white);
 }
-label{
-  background-color: var(--pink);
-  color: var(--black);
-  font-size: 30px;
-  font-weight: 400px;
-  display: block;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 3px;
+.pop-general {
+  background-color:var(--purple-soft);
+  font-size: 14px;
+  color: var(--white);
+  font-weight: bold;
+  display: inline-block;
+  height: 50px;
+  width: 120px;
+  padding:10px;
+  border-radius: 25px;
+  border-color: var(--purple-soft);
+  margin: 0%;
 }
-#button-check, #button-check2, #button-check3 {
-    background-color:var(--purple-middle);
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-    height: 70px;
-    width: 150px;
-    border-radius: 25px;
-    border-color: var(--purple-dark);
-    margin: 20px;
+.pop-general:hover{
+  background-color: var(--purple-middle) ;
+}
+.RevoluciónQ, .autorQ, .capitalQ {
+  background-color:var(--purple-middle);
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 25px;
+  border-color: var(--purple-dark);
+  margin: 20px; 
+  height: 40px;
+}
+.RevoluciónQ:hover, .autorQ:hover, .capitalQ:hover {
+  background-color: var(--purple-soft);
+  border-color: var(--purple-middle);
+  color: var(--black);
 }
 #button-check:hover, #button-check2:hover, #button-check3:hover {
   background-color: var(--pink-middle);
@@ -146,7 +160,6 @@ label{
   border-color: var(--blue-dark);
   color: var(--white);
 }
-
 .final {
   background-color: var(--pink-middle);
   color: var(--white);
@@ -160,15 +173,16 @@ label{
   margin-right: 400px;
 }
 #volver-a-jugar {
-  background-color: var(--pink);
+  background-color: var(--purple-soft);
     font-size: 20px;
-    display: grid;
-    justify-content: center;
+    display: inline-block;
     height: 70px;
     width: 150px;
     border-radius: 25px;
-    border-color: var(--black);
+    border-color: var(--purple-soft);
     margin: 40px;
+    margin-top: 30px;
+    font-weight: bold;
 }
 #volver-a-jugar:hover {
   background-color: var(--blue-dark);
@@ -189,6 +203,13 @@ label{
 #mensajeRespuesta1{
     height: 100px;
     width: 100px;
-    font-size: 20px;
-    
+    font-size: 20px;  
+}
+#score{
+  background-image: url(/Pics/fondo.jpg);
+  background-color: var(--blue-middle);
+  color: var(--black);
+  font-size: 50px;
+  display: block;
+  text-align: center;
 }
